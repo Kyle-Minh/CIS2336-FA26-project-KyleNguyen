@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student services and student organizations at UH Sugar Land.">
+  <title>Services | UH Sugar Land Student Center</title>
+
+  <!-- Google Fonts: Montserrat (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top bar: address + live "Open now / Closed" status (filled in by main.js) -->
+  <div class="top-bar">
+    <div class="container">
+      <span class="top-bar-address">14000 University Blvd, Sugar Land, TX 77479</span>
+      <span id="open-status" class="open-status" role="status">Checking hours…</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="UH Sugar Land Student Center home">
+        <span class="brand-mark" aria-hidden="true">UH</span>
+        <span class="brand-text">Sugar Land <strong>Student Center</strong></span>
+      </a>
+
+      <!-- Hamburger button (shown on small screens) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- The menu links are created by JavaScript (js/main.js → NAV_ITEMS) -->
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <noscript><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="events.html">Events</a></li><li><a href="services.html">Services</a></li><li><a href="faq.html">FAQ</a></li><li><a href="references.html">References</a></li><li><a href="booking.html">Book a Room</a></li></ul></noscript>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Services</p>
+        <h1>Services</h1>
+        <p>Resources and opportunities for UH students.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Student Services</span>
+          <h2 id="services-heading">Support in One Place</h2>
+          <p>Staff from these offices hold hours in the Student Center every week.</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid--3">
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><h3>Academic Support</h3><p>Tutoring, writing help and study skills coaching.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div><h3>Counseling &amp; Wellness</h3><p>Confidential counseling referrals and wellness programs.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3>Career Services</h3><p>Resume reviews, mock interviews and internship search help.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Tech Help</h3><p>Help with Wi-Fi, campus accounts, printing and software.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2"/><path d="M14 10h4M14 14h4"/></svg></div><h3>Student Records</h3><p>Questions about enrollment, ID cards and registration.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3>Student Activities</h3><p>Get involved in events, leadership and organizations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" aria-labelledby="health-heading">
+      <div class="container two-col">
+        <img class="card-media" style="border-radius:var(--radius);box-shadow:var(--shadow)"
+             src="https://www.uh.edu/sugarland/_images/sugar-land-campus_nursing-student-ear-otoscope-exam_800x600.jpg"
+             alt="A nursing student uses an otoscope to examine a patient's ear in a nursing lab."
+             loading="lazy">
+        <div>
+          <h2 id="health-heading">Hands-On Learning on Campus</h2>
+          <p>The Sugar Land campus offers programs with modern labs and learning spaces. The Student Center connects you to the people and resources that support you outside the classroom.</p>
+          <p>Visit the official UH Sugar Land website for academic programs and campus news.</p>
+          <a class="btn btn--primary" href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener">Visit UH Sugar Land <span class="visually-hidden">(opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="orgs-heading">
+      <div class="container" style="max-width:860px">
+        <div class="section-heading">
+          <span class="eyebrow">Student Organizations</span>
+          <h2 id="orgs-heading">Find Opportunities to Connect</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="org-list">
+          <div class="org-item">
+            <div class="org-row">
+              <h3>Student Government Association – Sugar Land</h3>
+              <button type="button" class="btn btn--outline btn--small" data-collapsible aria-controls="org-1"
+                      data-open-text="Show Less" data-closed-text="Learn More">Learn More</button>
+            </div>
+            <div class="org-details" id="org-1"><p>Represents Sugar Land students, funds student initiatives and hosts town halls each semester.</p></div>
+          </div>
+          <div class="org-item">
+            <div class="org-row">
+              <h3>Coogs Esports Club</h3>
+              <button type="button" class="btn btn--outline btn--small" data-collapsible aria-controls="org-2"
+                      data-open-text="Show Less" data-closed-text="Learn More">Learn More</button>
+            </div>
+            <div class="org-details" id="org-2"><p>Competitive and casual gaming, weekly practice nights in the game room and campus tournaments.</p></div>
+          </div>
+          <div class="org-item">
+            <div class="org-row">
+              <h3>Nursing Student Association</h3>
+              <button type="button" class="btn btn--outline btn--small" data-collapsible aria-controls="org-3"
+                      data-open-text="Show Less" data-closed-text="Learn More">Learn More</button>
+            </div>
+            <div class="org-details" id="org-3"><p>Study groups, NCLEX prep sessions and community health volunteering for nursing majors.</p></div>
+          </div>
+          <div class="org-item">
+            <div class="org-row">
+              <h3>Technology & Engineering Society</h3>
+              <button type="button" class="btn btn--outline btn--small" data-collapsible aria-controls="org-4"
+                      data-open-text="Show Less" data-closed-text="Learn More">Learn More</button>
+            </div>
+            <div class="org-details" id="org-4"><p>Hands-on projects, hackathons and industry speakers for technology and engineering students.</p></div>
+          </div>
+          <div class="org-item">
+            <div class="org-row">
+              <h3>Business Leaders Club</h3>
+              <button type="button" class="btn btn--outline btn--small" data-collapsible aria-controls="org-5"
+                      data-open-text="Show Less" data-closed-text="Learn More">Learn More</button>
+            </div>
+            <div class="org-details" id="org-5"><p>Networking events, case competitions and professional development workshops.</p></div>
+          </div>
+          <div class="org-item">
+            <div class="org-row">
+              <h3>Cultural Connections</h3>
+              <button type="button" class="btn btn--outline btn--small" data-collapsible aria-controls="org-6"
+                      data-open-text="Show Less" data-closed-text="Learn More">Learn More</button>
+            </div>
+            <div class="org-details" id="org-6"><p>Celebrates the many cultures on campus through food, music and heritage month events.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Our Mission</h2>
+        <p>The UH Sugar Land Student Center gives every Coog a place to connect, study, relax and get involved — bringing campus resources, student life and community together under one roof.</p>
+        <p>14000 University Blvd<br>Sugar Land, TX 77479</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul class="footer-links" id="footer-links"></ul>
+      </div>
+      <div>
+        <h2>Center Hours</h2>
+        <ul class="footer-hours" id="footer-hours"></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; <span id="footer-year">2026</span> UH Sugar Land Student Center (concept site)</span>
+        <span>Student project for CIS 2336 — not an official University of Houston website.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: main.js first (shared), then page-specific files -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

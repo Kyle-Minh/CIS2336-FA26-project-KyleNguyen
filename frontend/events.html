@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search and filter upcoming Student Center events.">
+  <title>Events | UH Sugar Land Student Center</title>
+
+  <!-- Google Fonts: Montserrat (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top bar: address + live "Open now / Closed" status (filled in by main.js) -->
+  <div class="top-bar">
+    <div class="container">
+      <span class="top-bar-address">14000 University Blvd, Sugar Land, TX 77479</span>
+      <span id="open-status" class="open-status" role="status">Checking hours…</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="UH Sugar Land Student Center home">
+        <span class="brand-mark" aria-hidden="true">UH</span>
+        <span class="brand-text">Sugar Land <strong>Student Center</strong></span>
+      </a>
+
+      <!-- Hamburger button (shown on small screens) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- The menu links are created by JavaScript (js/main.js → NAV_ITEMS) -->
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <noscript><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="events.html">Events</a></li><li><a href="services.html">Services</a></li><li><a href="faq.html">FAQ</a></li><li><a href="references.html">References</a></li><li><a href="booking.html">Book a Room</a></li></ul></noscript>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Events</p>
+        <h1>Events</h1>
+        <p>Discover upcoming events and activities at the Student Center.</p>
+      </div>
+    </section>
+
+    <section class="section section--gray">
+      <div class="container">
+        <form class="filters" id="event-filters" role="search" aria-label="Filter events">
+          <div class="form-group search-group">
+            <label for="event-search">Search Events</label>
+            <div class="search-field">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="search" id="event-search" name="search" placeholder="Search by event name…" autocomplete="off">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="event-category">Category</label>
+            <select id="event-category" name="category">
+              <option value="all">All Events</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="event-month">Date</label>
+            <select id="event-month" name="month">
+              <option value="all">All Dates</option>
+            </select>
+          </div>
+        </form>
+
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+
+        <div class="event-list" id="event-list">
+          <noscript><p class="empty-state">Please enable JavaScript to see the event list.</p></noscript>
+        </div>
+
+        <div class="empty-state" id="events-empty" hidden>
+          <h3>No events match your search</h3>
+          <p>Try a different keyword, category or date.</p>
+          <button type="button" class="btn btn--outline btn--small" id="reset-filters">Clear filters</button>
+        </div>
+
+        <div class="load-more-wrap">
+          <button type="button" class="btn btn--primary" id="load-more" hidden>Load More</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Our Mission</h2>
+        <p>The UH Sugar Land Student Center gives every Coog a place to connect, study, relax and get involved — bringing campus resources, student life and community together under one roof.</p>
+        <p>14000 University Blvd<br>Sugar Land, TX 77479</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul class="footer-links" id="footer-links"></ul>
+      </div>
+      <div>
+        <h2>Center Hours</h2>
+        <ul class="footer-hours" id="footer-hours"></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; <span id="footer-year">2026</span> UH Sugar Land Student Center (concept site)</span>
+        <span>Student project for CIS 2336 — not an official University of Houston website.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: main.js first (shared), then page-specific files -->
+  <script src="js/main.js"></script>
+  <script src="js/events-data.js"></script>
+  <script src="js/events.js"></script>
+</body>
+</html>

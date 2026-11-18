@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI prompt log, media credits and references for this project.">
+  <title>References | UH Sugar Land Student Center</title>
+
+  <!-- Google Fonts: Montserrat (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top bar: address + live "Open now / Closed" status (filled in by main.js) -->
+  <div class="top-bar">
+    <div class="container">
+      <span class="top-bar-address">14000 University Blvd, Sugar Land, TX 77479</span>
+      <span id="open-status" class="open-status" role="status">Checking hours…</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="UH Sugar Land Student Center home">
+        <span class="brand-mark" aria-hidden="true">UH</span>
+        <span class="brand-text">Sugar Land <strong>Student Center</strong></span>
+      </a>
+
+      <!-- Hamburger button (shown on small screens) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- The menu links are created by JavaScript (js/main.js → NAV_ITEMS) -->
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <noscript><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="events.html">Events</a></li><li><a href="services.html">Services</a></li><li><a href="faq.html">FAQ</a></li><li><a href="references.html">References</a></li><li><a href="booking.html">Book a Room</a></li></ul></noscript>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / References</p>
+        <h1>References</h1>
+        <p>AI prompts, media credits and sources used to build this website.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ai-heading">
+      <div class="container" style="max-width:900px">
+        <div class="section-heading">
+          <span class="eyebrow">Academic integrity</span>
+          <h2 id="ai-heading">AI Prompt Log</h2>
+          <p>As required by the project guidelines, every prompt I gave an AI tool while building this website is listed below, along with how I used the response.</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="prompt-log">
+          <article class="prompt-entry">
+            <div class="prompt-meta"><span class="tag">Prompt 1</span><span>Tool: Claude (Anthropic)</span><span>Date: 11/17/2026</span></div>
+            <blockquote>Analyze these two for me please before we start to code.</blockquote>
+            <p class="hint">Attached: Phase 1 Plan &amp; Design PDF and a screenshot of the front-end grading rubric.</p>
+            <h3>How the response was used</h3>
+            <p>The AI compared my Phase 1 plan with the rubric and pointed out that the FAQ and Room Booking pages were missing, that the navigation labels in my wireframes and sitemap did not match, and that multimedia and interactivity needed more features.</p>
+            <p><strong>My changes:</strong> <em>[Describe what you reviewed, changed or wrote yourself.]</em></p>
+          </article>
+          <article class="prompt-entry">
+            <div class="prompt-meta"><span class="tag">Prompt 2</span><span>Tool: Claude (Anthropic)</span><span>Date: 11/17/2026</span></div>
+            <blockquote>Here are the front-end project details.
+
+Project Specifications &amp; Requirements
+1. Front-End
+   1. Design and implement a homepage with a navigation menu. Implement a dynamic menu display using JavaScript. Add a section titled "Developer Contact" that displays your name and your UH email address.
+   2. Design and implement a FAQ page (5 FAQ items) that open up via collapsible.
+   3. Develop a simple room booking form page (5 rooms) with validation checks for each room's availability (will be handled by the backend later). The form should follow best practices for validating form fields.
+   4. Design and implement a reference page. [...] AI tools may be used only if you display your AI prompts on this reference webpage. [...]
+   5. The website should integrate multimedia elements like images or videos (hosted remotely and embedded—you don't have to create the video). It should also follow best practices for User Interface design.</blockquote>
+            
+            <h3>How the response was used</h3>
+            <p>The AI explained what each requirement means for the build (JavaScript-generated menu, 5-item accordion, 5-room form with a placeholder availability check, this reference page, embedded remote video) and proposed an updated page list.</p>
+            <p><strong>My changes:</strong> <em>[Describe what you reviewed, changed or wrote yourself.]</em></p>
+          </article>
+          <article class="prompt-entry">
+            <div class="prompt-meta"><span class="tag">Prompt 3</span><span>Tool: Claude (Anthropic)</span><span>Date: 11/17/2026</span></div>
+            <blockquote>What I want you to do is to create a website for me (The front-end implementation) for these: [project description pasted]
+
+Use my work as a reference as well as the University of Houston color scheme and web design as an inspiration. After all, this project is meant to create a new homepage and other pages for UH. I will be using vscode to code so during the implementation process, please show me step by step how to properly implement everything.</blockquote>
+            
+            <h3>How the response was used</h3>
+            <p>The AI generated the starting HTML, CSS and JavaScript files based on my Phase 1 wireframes, sitemap, colors and fonts, plus a step-by-step VS Code guide explaining each file.</p>
+            <p><strong>My changes:</strong> <em>[Describe what you reviewed, changed or wrote yourself.]</em></p>
+          </article>
+          <!-- TODO: copy the block above for every new prompt you use -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" aria-labelledby="media-heading">
+      <div class="container" style="max-width:900px">
+        <div class="section-heading">
+          <h2 id="media-heading">Media &amp; Asset Credits</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Asset</th><th scope="col">Used on</th><th scope="col">Source</th></tr></thead>
+            <tbody>
+              <tr><td>Video: <em>The College Tour: University of Houston</em></td><td>Home</td><td><a href="https://www.youtube.com/watch?v=-gdAoQol0xE" target="_blank" rel="noopener">YouTube – University of Houston</a></td></tr>
+              <tr><td>Photo: students walking to campus building</td><td>Home, About</td><td><a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener">UH Sugar Land website</a></td></tr>
+              <tr><td>Photo: library study session</td><td>Facilities</td><td><a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener">UH Sugar Land website</a></td></tr>
+              <tr><td>Photo: esports room</td><td>Facilities</td><td><a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener">UH Sugar Land website</a></td></tr>
+              <tr><td>Photo: nursing lab</td><td>Services</td><td><a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener">UH Sugar Land website</a></td></tr>
+              <tr><td>Map embed</td><td>About</td><td>Google Maps</td></tr>
+              <tr><td>Fonts: Montserrat, Open Sans</td><td>All pages</td><td><a href="https://fonts.google.com/" target="_blank" rel="noopener">Google Fonts</a></td></tr>
+              <tr><td>Icons</td><td>All pages</td><td>Simple inline SVG line icons drawn for this site</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="other-heading">
+      <div class="container" style="max-width:900px">
+        <h2 id="other-heading">Other References</h2>
+        <ul class="feature-list">
+          <li><a href="https://www.uh.edu/sugarland/" target="_blank" rel="noopener">University of Houston Sugar Land</a> — design inspiration (colors, layout) and campus information.</li>
+          <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a> — HTML, CSS and JavaScript reference.</li>
+          <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/accordion/" target="_blank" rel="noopener">W3C ARIA Authoring Practices: Accordion</a> — accessible collapsible pattern used on the FAQ page.</li>
+          <li>Phase 1 Planning &amp; Design Document — my own wireframes, sitemap, personas and visual direction.</li>
+        </ul>
+        <p class="hint mt-4">Note: events, staff roles, room names, hours and student organizations on this site are sample content created for this class project.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Our Mission</h2>
+        <p>The UH Sugar Land Student Center gives every Coog a place to connect, study, relax and get involved — bringing campus resources, student life and community together under one roof.</p>
+        <p>14000 University Blvd<br>Sugar Land, TX 77479</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul class="footer-links" id="footer-links"></ul>
+      </div>
+      <div>
+        <h2>Center Hours</h2>
+        <ul class="footer-hours" id="footer-hours"></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; <span id="footer-year">2026</span> UH Sugar Land Student Center (concept site)</span>
+        <span>Student project for CIS 2336 — not an official University of Houston website.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: main.js first (shared), then page-specific files -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

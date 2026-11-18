@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Study areas, lounge, collaboration rooms and amenities at the Student Center.">
+  <title>Facilities | UH Sugar Land Student Center</title>
+
+  <!-- Google Fonts: Montserrat (headings) + Open Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top bar: address + live "Open now / Closed" status (filled in by main.js) -->
+  <div class="top-bar">
+    <div class="container">
+      <span class="top-bar-address">14000 University Blvd, Sugar Land, TX 77479</span>
+      <span id="open-status" class="open-status" role="status">Checking hours…</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="UH Sugar Land Student Center home">
+        <span class="brand-mark" aria-hidden="true">UH</span>
+        <span class="brand-text">Sugar Land <strong>Student Center</strong></span>
+      </a>
+
+      <!-- Hamburger button (shown on small screens) -->
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- The menu links are created by JavaScript (js/main.js → NAV_ITEMS) -->
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <noscript><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="facilities.html">Facilities</a></li><li><a href="events.html">Events</a></li><li><a href="services.html">Services</a></li><li><a href="faq.html">FAQ</a></li><li><a href="references.html">References</a></li><li><a href="booking.html">Book a Room</a></li></ul></noscript>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Facilities</p>
+        <h1>Facilities</h1>
+        <p>Spaces to study, relax, connect and collaborate.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="areas-heading">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Student Areas &amp; Lounge</span>
+          <h2 id="areas-heading">Find the Right Space</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid--2">
+          <article class="card">
+            <img class="card-media" src="https://www.uh.edu/sugarland/_images/sugar-land-campus_class-in-library_800x600.jpg" alt="Students reading together at a library table while an instructor looks on." loading="lazy">
+            <div class="card-body">
+              <span class="tag">Quiet zone</span>
+              <h3>Study Areas</h3>
+              <p>Quiet spaces for students to work and study between classes.</p>
+              <ul class="feature-list"><li>Individual desks and power outlets</li><li>Quiet-zone rules after 6 PM</li><li>Natural light and Wi-Fi throughout</li></ul>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-media" src="https://www.uh.edu/sugarland/_images/sugar-land-campus_esports-room-gaming-computers-window_800x600.jpg" alt="A row of gaming computers with neon lighting." loading="lazy">
+            <div class="card-body">
+              <span class="tag">Relax</span>
+              <h3>Lounge &amp; Game Room</h3>
+              <p>Comfortable spaces to relax between classes, plus gaming PCs for esports and casual play.</p>
+              <ul class="feature-list"><li>Lounge seating and TVs</li><li>Gaming PCs and consoles</li><li>Home of the Coogs Esports Club</li></ul>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-icon-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <div class="card-body">
+              <span class="tag">Reservable</span>
+              <h3>Collaboration Rooms</h3>
+              <p>Five rooms for group projects and team meetings — reserve one online.</p>
+              <ul class="feature-list"><li>Seats 4 to 12 people</li><li>Displays and video conferencing</li><li>Book up to 30 days ahead</li></ul>
+              <a class="btn btn--primary btn--small" href="booking.html">Book a Room</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-icon-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg></div>
+            <div class="card-body">
+              <span class="tag">Gather</span>
+              <h3>Student Common Area</h3>
+              <p>An open space for students to meet, socialize and attend center events.</p>
+              <ul class="feature-list"><li>Event stage and seating</li><li>Organization tables and info boards</li><li>Grab-and-go café corner</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gray" aria-labelledby="amenities-heading">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="amenities-heading">Amenities</h2>
+          <div class="accent-line"></div>
+        </div>
+        <div class="grid grid--4">
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg></div><h3>Free Wi-Fi</h3><p>Fast campus Wi-Fi and charging stations everywhere.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div><h3>Printing</h3><p>Print, copy and scan with your Cougar Card.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><h3>Café Corner</h3><p>Coffee, snacks and a place to refuel.</p></div>
+          <div class="card icon-card"><div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Accessible</h3><p>Accessible entrances, furniture and restrooms.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="hours-heading">
+      <div class="container" style="max-width:640px">
+        <div class="section-heading">
+          <h2 id="hours-heading">Center Hours</h2>
+          <p>Today's hours are highlighted.</p>
+          <div class="accent-line"></div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Day</th><th scope="col">Hours</th></tr></thead>
+            <tbody id="hours-table"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h2>Our Mission</h2>
+        <p>The UH Sugar Land Student Center gives every Coog a place to connect, study, relax and get involved — bringing campus resources, student life and community together under one roof.</p>
+        <p>14000 University Blvd<br>Sugar Land, TX 77479</p>
+      </div>
+      <div>
+        <h2>Quick Links</h2>
+        <ul class="footer-links" id="footer-links"></ul>
+      </div>
+      <div>
+        <h2>Center Hours</h2>
+        <ul class="footer-hours" id="footer-hours"></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; <span id="footer-year">2026</span> UH Sugar Land Student Center (concept site)</span>
+        <span>Student project for CIS 2336 — not an official University of Houston website.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: main.js first (shared), then page-specific files -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
